@@ -1,15 +1,21 @@
 // Fonts
-$sansSerif  : 'Open Sans';
+$sansSerif : 'Open Sans';
 
 // Font Sizing
-$baseFontSize      : 16px;
-$baseLineHeight    : 1.5;
+$giganticFontSize : 48px;
+$hugeFontSize : 36px;
+$largeFontSize : 30px;
+$mediumFontSize : 24px;
+$baseFontSize : 18px;
+$smallFontSize : 14px;
+$miniFontSize : 11px;
+$baseLineHeight : 1.5;
 $headingLineHeight : 1.2;
 
 // Colors
-$black : rgba(51,51,51,1);
-$red   : #d52b1e;
-$blue  : #00a1de;
+$black : #323232;
+$white : #ffffff;
+$gray : #76777f;
 
 // Spacing
 $pad : 1em;

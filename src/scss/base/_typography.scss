@@ -4,18 +4,23 @@ html {
   color: $black;
   line-height: $baseLineHeight;
   font-size: 14px;
-  
+
   @media only screen and (min-width: $smallBreakpoint) {
     font-size: 15px;
   }
-  
+
   @media only screen and (min-width: $largeBreakpoint) {
     font-size: $baseFontSize;
-  }  
+  }
 }
 
 // Header Styles
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   margin: 0;
   margin-bottom: $pad;
@@ -25,11 +30,32 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
   }
 }
+
 p {
   margin-bottom: $pad;
 }
 
 // Text Styles
-em { font-style: italic; }
-strong { font-weight: bold; }
-.uppercase { text-transform: uppercase; }  
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+//style section
+$sectionTitle: $largeFontSize;
+$sectionSubtitle: $baseFontSize;
+$sectionTitle--gray: $giganticFontSize;
+$sectionSubtitle--gray: $mediumFontSize;
+
+
+//style buttons
+$buttonMini: $miniFontSize;
+$buttonLarge: $baseFontSize;
