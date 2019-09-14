@@ -1,18 +1,10 @@
-html {
-  font-family: $sansSerif, sans-serif;
-  font-weight: normal;
-  color: $black;
-  line-height: $baseLineHeight;
-  font-size: 14px;
-
-  @media only screen and (min-width: $smallBreakpoint) {
-    font-size: 15px;
-  }
-
-  @media only screen and (min-width: $largeBreakpoint) {
-    font-size: $baseFontSize;
-  }
+*,
+html,
+body {
+  font-size: $baseFontSize;
+  font-family: $fontFamily;
 }
+
 
 // Header Styles
 h1,
@@ -23,17 +15,28 @@ h5,
 h6 {
   font-weight: bold;
   margin: 0;
-  margin-bottom: $pad;
   line-height: $headingLineHeight;
-
-  a {
-    font-weight: inherit;
-  }
 }
 
+
+h1 {
+  font-size: $giganticFontSize;
+}
+
+h2 {
+  font-size: $hugeFontSize;
+}
+
+h3 {
+  font-size: $largeFontSize;
+}
+
+// Paragraphs
 p {
-  margin-bottom: $pad;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight
 }
+
 
 // Text Styles
 em {
@@ -44,18 +47,11 @@ strong {
   font-weight: bold;
 }
 
-.uppercase {
-  text-transform: uppercase;
+ul {
+  list-style: none;
 }
 
-
-//style section
-$sectionTitle: $largeFontSize;
-$sectionSubtitle: $baseFontSize;
-$sectionTitle--gray: $giganticFontSize;
-$sectionSubtitle--gray: $mediumFontSize;
-
-
-//style buttons
-$buttonMini: $miniFontSize;
-$buttonLarge: $baseFontSize;
+a {
+  font-weight: inherit;
+  text-decoration: none;
+}

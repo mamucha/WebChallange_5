@@ -1,25 +1,59 @@
-// Fonts
-$sansSerif : 'Open Sans';
+// Font Family
+$fontFamily: 'Open Sans';
 
-// Font Sizing
-$giganticFontSize : 48px;
-$hugeFontSize : 36px;
-$largeFontSize : 30px;
-$mediumFontSize : 24px;
-$baseFontSize : 18px;
-$smallFontSize : 14px;
-$miniFontSize : 11px;
+// Base Font and Color
+$baseFontSize: 18px;
+$baseColor: #ffffff;
 $baseLineHeight : 1.5;
 $headingLineHeight : 1.2;
+
+
+// Font Sizing
+$giganticFontSize: rem(48px);
+$hugeFontSize: rem(36px);
+$largeFontSize: rem(30px);
+$mediumFontSize: rem(24px);
+$smallFontSize: rem(14px);
+$miniFontSize: rem(11px);
+
 
 // Colors
 $black : #323232;
 $white : #ffffff;
 $gray : #76777f;
 
-// Spacing
-$pad : 1em;
+// Nav Styles
+$navColor: #ffffff;
+$navSize-logo: rem(24px);
+$navSize: rem(14px);
 
-// Breakpoints
-$smallBreakpoint : 600px;
-$largeBreakpoint : 1080px;
+// Intro Styles
+$introColor: #ffffff;
+$introSize-title: rem(36px);
+$introSize-subtitle: rem(24px);
+
+// Header Styles
+$headerColor-white: #ffffff;
+$headerColor-black: #323232;
+$headerSizeTitle: rem(30px);
+$headerSizeSubtitle: rem(18px);
+
+// Features Block Styles
+$featuresColor: #ffffff;
+$featuresSizeTitle: rem(18px);
+$featuresSizeSubtitle: rem(14px);
+
+// Gray Section Styles
+$sectionColor: #ffffff;
+$sectionSizeTitle: rem(48px);
+$sectionSizeSubtitle: rem(24px);
+
+// Portofolio Styles
+$portofolioColor: #ffffff;
+$portofolioSizeTitle: rem(24px);
+$portofolioSizeSubtitle: rem(14px);
+
+
+// Buttons Styles
+$buttonSize-large: rem(18px);
+$buttonSize-mini: rem(11px);
