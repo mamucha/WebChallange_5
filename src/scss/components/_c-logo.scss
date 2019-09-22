@@ -1,0 +1,14 @@
+.c-logo {
+    cursor: pointer;
+
+    &__txt {
+        font-size: 24px;
+        font-weight: 400;
+
+        &--bold {
+            // font-size: 24px;
+            font-weight: 700;
+
+        }
+    }
+}
