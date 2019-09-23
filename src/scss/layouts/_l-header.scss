@@ -5,4 +5,13 @@
     color: $white;
     top: 0;
     left: 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1170px;
+        height: 80px;
+        margin: 0 auto;
+    }
 }
