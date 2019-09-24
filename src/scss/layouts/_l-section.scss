@@ -4,4 +4,13 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+
+    &--intro {
+        margin-top: 80px;
+        height: 475px;
+        background-color: $introColor;
+        background-image: url('../img/intro/bg_img_slider.png');
+        background-repeat: no-repeat;
+        background-position: 365px 35px;
+    }
 }

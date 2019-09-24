@@ -1,0 +1,14 @@
+.c-button {
+    padding: 13px 30px;
+    background-color: $btnColor;
+    border-style: none;
+    color: $white;
+    font-size: $buttonSize-mini;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &--large {
+        padding: 20px 50px;
+        font-size: $buttonSize-large;
+    }
+}
