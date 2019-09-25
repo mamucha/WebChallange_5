@@ -1,9 +1,15 @@
 .l-wrapper {
     max-width: 1192px;
     margin: 70px auto;
+    width: 100%;
 
     &--intro {
-        width: 100%;
+
         text-align: left;
     }
+
+    &--services {
+        margin: 70px 20px;
+    }
+
 }

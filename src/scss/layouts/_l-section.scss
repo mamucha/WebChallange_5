@@ -13,4 +13,9 @@
         background-repeat: no-repeat;
         background-position: 365px 35px;
     }
+
+    &--services {
+        background-color: $servicesColor;
+        color: $white;
+    }
 }
