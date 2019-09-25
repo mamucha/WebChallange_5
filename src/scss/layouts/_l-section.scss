@@ -18,4 +18,21 @@
         background-color: $servicesColor;
         color: $white;
     }
+
+    &--gray {
+        position: relative;
+        background-color: $gray;
+        color: $white;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../img/gray/pattern_parallax.png');
+            opacity: 0.8;
+        }
+    }
 }
