@@ -1,0 +1,42 @@
+.c-gallery {
+
+    &__header {
+        padding-bottom: 35px;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 370px;
+        min-height: 290px;
+        background-color: $gray;
+        margin: 13px 0;
+    }
+
+    &__title {
+        font-size: $mediumFontSize;
+        padding-bottom: 22px;
+    }
+
+    &__description {
+        font-size: $smallFontSize;
+        margin: 0 50px;
+    }
+
+    &__icon {
+        padding-top: 25px;
+        color: $white;
+        filter: invert(1);
+
+    }
+}
