@@ -49,6 +49,19 @@
             transform: translate(50%, -50%);
         }
 
+        &--black {
+            border-color: $black;
+
+            &::before {
+                background-color: $black;
+            }
+
+            &::after {
+                background-color: $black;
+            }
+
+        }
+
 
     }
 
