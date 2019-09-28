@@ -2,6 +2,12 @@
 
     &__header {
         padding-bottom: 35px;
+        color: $gray;
+        cursor: pointer;
+
+        &--category:nth-child(1) {
+            color: $black;
+        }
     }
 
     &__cards {
@@ -13,30 +19,18 @@
 
     }
 
-    &__card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 370px;
-        min-height: 290px;
-        background-color: $gray;
-        margin: 13px 0;
-    }
 
-    &__title {
-        font-size: $mediumFontSize;
-        padding-bottom: 22px;
-    }
 
-    &__description {
-        font-size: $smallFontSize;
-        margin: 0 50px;
-    }
 
-    &__icon {
-        padding-top: 25px;
-        color: $white;
-        filter: invert(1);
 
+
+    &__all {
+        margin-top: 65px;
+        font-weight: 700;
+        line-height: 24px;
+
+        &--arrow {
+            margin-top: 14px;
+        }
     }
 }
