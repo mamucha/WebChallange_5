@@ -1,0 +1,41 @@
+.c-opinion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 60px;
+
+    &__image {
+        margin-right: 100px;
+    }
+
+    &__text {
+        text-align: left;
+        width: 760px;
+
+    }
+
+    &__quote {
+        font-style: italic;
+        line-height: 30px;
+        margin-bottom: 25px;
+        position: relative;
+
+        &--quation::before {
+            content: '" ';
+            position: absolute;
+            left: -35px;
+            top: 0;
+            font-size: 60px;
+            line-height: 30px;
+        }
+    }
+
+    &__author {
+        text-align: left;
+        font-size: $mediumFontSize;
+        font-weight: 700;
+
+    }
+
+}
