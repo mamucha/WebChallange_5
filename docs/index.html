@@ -9,6 +9,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22b5a4eeb5.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -252,47 +253,57 @@
 
 
     <section class="l-section l-section--footer">
-        <div class="l-wrapper">
-            <header class="title">
-                <h3>Contact</h3>
-                <p>Let's talk business, get in touch!</p>
+        <div class="l-wrapper l-wrapper--footer">
+            <header class="c-header">
+                <h3 class="c-header__title">Contact</h3>
+                <p class="c-header__subtitle">Let's talk business, get in touch!</p>
+                <div class="c-header__underline"></div>
             </header>
 
-            <div class="contact--addres">
-                <hedaer class="contact">
-                    <p>Office Hours
-                        Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</p>
-                </hedaer>
-                <div class="contact-desc">
-                    <div class="icon">
-                        <img src="" alt="">
+            <div class="c-contact">
+
+                <div class="c-contact__adress">
+
+                    <h3 class="c-contact__title">Office Hours</h3>
+
+                    <p class="c-contact__subtitle">Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</p>
+
+                    <p class="c-contact__subtitle">
+                        <img class="c-contact__icon" src="./img/footer/location.svg" alt="">
+                        25 Silver Cost Avenue, MD 20910 Indonesia
+                    </p>
+
+                    <p class="c-contact__subtitle">
+                        <img class="c-contact__icon" src="./img/footer/phone.svg" alt="">
+                        (621) 555 6789
+                    </p>
+
+                    <p class="c-contact__subtitle">
+                        <img class="c-contact__icon" src="./img/footer/mail.svg" alt="">
+                        hello@macankumbang.net
+                    </p>
+
+                    <div class="c-contact__socials">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google-plus-g"></i>
                     </div>
-                    <div class="text">25 Silver Cost Avenue, MD 20910 Indonesia</div>
-                </div>
 
-                <div class="contact-desc">
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">(621) 555 6789</div>
                 </div>
-
-                <div class="contact-desc">
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">hello@macankumbang.net</div>
-                </div>
-
-                <div class="contact-socials">
-                    <div class="twitter"></div>
-                    <div class="facebook"></div>
-                    <div class="google"></div>
-                </div>
-
             </div>
 
-            <div class="contact-form">
+
+            <div class="c-contact__form">
+                <form action="">
+                    <div class="c-contact__form--inline">
+                        <input type="text" class="c-contact__input" placeholder="Name">
+                        <input type="email" class="c-contact__input" placeholder="Email">
+                    </div>
+                    <textarea class="c-contact__text" name="" id="" cols="30" rows="10"
+                        placeholder="Message"></textarea>
+                    <button class="c-button c-button--large">Send</button>
+
+                </form>
 
             </div>
         </div>
@@ -308,7 +319,7 @@
 
 </body>
 <!-- <script src="../src/scripts/map.js"></script> -->
-<script src="https://kit.fontawesome.com/22b5a4eeb5.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/script.min.js"></script>
