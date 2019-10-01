@@ -61,12 +61,44 @@
             &:hover {
                 background-color: #505050;
 
-                filter: invert(0);
-
-
             }
         }
     }
 
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        max-width: 570px;
+        width: 100%;
+
+        &--inline {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+
+    &__input {
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+
+        &:nth-child(1) {
+            margin-right: 20px;
+        }
+    }
+
+    &__text {
+        padding: 20px;
+        height: 160px;
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 5px;
+        border: none;
+    }
 
 }
