@@ -36,8 +36,13 @@
         }
     }
 
-    &--footer {
+    &--contact {
         background-color: $blue;
         color: $white;
+    }
+
+    &--footer {
+        background-color: $introColor;
+        color: #76777f;
     }
 }
