@@ -10,12 +10,13 @@
     }
 
     &__item {
+        width: 100%;
         font-size: 16px;
         transition: 1s all;
 
         &:hover {
             background-color: #2e2e2e;
-            border-radius: 10%;
+            border-radius: 5%;
         }
     }
 
