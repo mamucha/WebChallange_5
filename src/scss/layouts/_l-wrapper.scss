@@ -1,11 +1,18 @@
 .l-wrapper {
     max-width: 1192px;
-    margin: 70px auto;
+    padding: 70px 0;
+    margin: 0 auto;
     width: 100%;
+
+    //mobile
+    display: flex;
+    flex-direction: column;
 
     &--intro {
 
-        text-align: left;
+        // text-align: left;
+        text-align: center;
+        padding: 40px 25px;
     }
 
     &--services {
@@ -20,4 +27,19 @@
         margin: 50px auto;
     }
 
+}
+
+
+//media quaries
+// screen > 1024px
+
+@mixin l-wrapper\@screen_wide {
+    .l-wrapper {
+
+        &--intro {
+            background-image: url('../img/intro/bg_img_slider.png');
+            background-repeat: no-repeat;
+            background-position: 35px 30px;
+        }
+    }
 }

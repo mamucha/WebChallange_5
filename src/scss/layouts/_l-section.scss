@@ -7,11 +7,8 @@
 
     &--intro {
         margin-top: 80px;
-        height: 475px;
         background-color: $introColor;
-        background-image: url('../img/intro/bg_img_slider.png');
-        background-repeat: no-repeat;
-        background-position: 365px 35px;
+
     }
 
     &--services {
@@ -46,3 +43,9 @@
         color: #76777f;
     }
 }
+
+
+//media quaries
+// screen > 1024px
+
+@mixin l-section\@screen_wide {}

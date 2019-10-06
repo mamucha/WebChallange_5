@@ -1,9 +1,18 @@
-// Small screen > 460px
+// Tiny screen > 460px
 @media only screen and (min-width: 460px) {}
+
+// Small screen > 640px
+@media only screen and (min-width: 640px) {
+    @include c-intro\@screen_small;
+}
 
 // Medium screen > 768px
 @media only screen and (min-width: 768px) {}
 
 
 // Wide screen > 1024px
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    @include c-intro\@screen_wide;
+    @include l-section\@screen_wide;
+    @include l-wrapper\@screen_wide;
+}
