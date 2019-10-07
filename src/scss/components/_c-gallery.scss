@@ -1,7 +1,7 @@
 .c-gallery {
 
     &__header {
-        padding-bottom: 35px;
+        padding-bottom: 10px;
         color: $gray;
         cursor: pointer;
 
@@ -16,13 +16,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
 
-
     }
-
-
-
-
-
 
     &__all {
         margin-top: 65px;
@@ -31,6 +25,19 @@
 
         &--arrow {
             margin-top: 14px;
+        }
+    }
+}
+
+
+
+//media quaries
+// screen > 768px
+@mixin c-gallery\@screen_medium {
+    .c-gallery {
+
+        &__header {
+            padding-bottom: 35px;
         }
     }
 }
