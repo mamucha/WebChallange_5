@@ -20,7 +20,7 @@
     // }
 
     &--gray {
-        margin: 190px 0 140px 0;
+        padding: 100px 0;
     }
 
     &--footer {
@@ -40,6 +40,10 @@
             background-image: url('../img/intro/bg_img_slider.png');
             background-repeat: no-repeat;
             background-position: 35px 30px;
+        }
+
+        &--gray {
+            padding: 190px 0 140px 0;
         }
     }
 }
