@@ -11,6 +11,7 @@
 // Medium screen > 768px
 @media only screen and (min-width: 768px) {
     @include c-gallery\@screen_medium;
+    @include c-opinion\@screen_medium;
 
 }
 
