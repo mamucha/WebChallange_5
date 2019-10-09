@@ -26,3 +26,9 @@
     @include l-section\@screen_wide;
     @include l-wrapper\@screen_wide;
 }
+
+
+// Mega screen > 1280px
+@media only screen and (min-width: 1280px) {
+    @include c-contact\@screen-mega;
+}
