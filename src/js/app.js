@@ -19,3 +19,4 @@
 //     btn.addEventListener("click", addElement);
 // }
 require('../scss/components/c-map/c-map.js');
+require('../scss/components/c-menu/c-menu.js');
