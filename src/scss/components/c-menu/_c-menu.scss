@@ -5,12 +5,19 @@
     // min-width: 470px;
 
     &__list {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-width: 470px;
 
+
+        background-color: #222222;
         display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+
     }
 
     &__item {
