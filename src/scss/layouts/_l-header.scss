@@ -15,6 +15,19 @@
         height: 80px;
         margin: 0 auto;
         position: relative;
-        padding: 15px;
+        padding: 15px 20px;
+    }
+}
+
+
+//media quaries
+// screen > 640px
+@mixin l-header\@screen_small {
+    .l-header {
+
+        &__wrapper {
+            padding: 15px 50px;
+        }
+
     }
 }
