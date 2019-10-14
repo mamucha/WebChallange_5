@@ -23,6 +23,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
+    console.log('hej');
     if (counter <= 0) return;
     carouseSlide.style.transition = 'transform 0.5s ease-in-out';
     counter--;
