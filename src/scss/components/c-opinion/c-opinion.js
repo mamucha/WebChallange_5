@@ -16,12 +16,14 @@ carouseSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
 
 //button
 nextBtn.addEventListener('click', () => {
+    if (counter >= carouseSlideBox.length - 1) return;
     carouseSlide.style.transition = 'transform 0.5s ease-in-out';
     counter++;
     carouseSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
 });
 
 prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;
     carouseSlide.style.transition = 'transform 0.5s ease-in-out';
     counter--;
     carouseSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
