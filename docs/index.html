@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script src="https://kit.fontawesome.com/22b5a4eeb5.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -267,7 +269,7 @@
                         </div>
                     </div>
 
-                    <div class="c-opinion">
+                    <div class="c-opinion" data-section="1">
                         <div class="c-opinion__image">
                             <img class="c-opinion__image--pic" src="./img/customer/img_customer.png" alt="">
                         </div>
@@ -284,7 +286,7 @@
                         </div>
                     </div>
 
-                    <div class="c-opinion">
+                    <div class="c-opinion" data-section="2">
                         <div class="c-opinion__image">
                             <img class="c-opinion__image--pic" src="./img/customer/img_customer.png" alt="">
                         </div>
@@ -301,7 +303,7 @@
                         </div>
                     </div>
 
-                    <div class="c-opinion">
+                    <div class="c-opinion" data-section="3">
                         <div class="c-opinion__image">
                             <img class="c-opinion__image--pic" src="./img/customer/img_customer.png" alt="">
                         </div>
@@ -318,7 +320,7 @@
                         </div>
                     </div>
 
-                    <div class="c-opinion">
+                    <div class="c-opinion" data-section="4">
                         <div class="c-opinion__image">
                             <img class="c-opinion__image--pic" src="./img/customer/img_customer.png" alt="">
                         </div>
@@ -363,12 +365,10 @@
 
 
                 <div class="c-slider">
-                    <!-- <i class="fas fa-arrow-circle-right" id="prevBtn"></i> -->
-                    <!-- <i class="fas fa-arrow-circle-left" id="prevBtn"></i> -->
-                    <div class="c-slider__dot"></div>
-                    <div class="c-slider__dot"></div>
-                    <div class="c-slider__dot"></div>
-                    <div class="c-slider__dot"></div>
+                    <div class="c-slider__dot h-active" data-section="1"></div>
+                    <div class="c-slider__dot" data-section="2"></div>
+                    <div class="c-slider__dot" data-section="3"></div>
+                    <div class="c-slider__dot" data-section="4"></div>
                 </div>
 
             </div>
@@ -481,6 +481,8 @@
 <!-- <script src="../src/scss/components/c-map/c-map.js"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqHPH32ok3-eIoF1_Io62O5d3WgiC7c0Y&callback=initMap">
 </script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.min.js"></script>
 
 </html>

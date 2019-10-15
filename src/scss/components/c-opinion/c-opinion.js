@@ -1,5 +1,6 @@
 const carouseSlide = document.querySelector('.c-opinions__container');
 const carouseSlideBox = document.querySelectorAll('.c-opinion');
+const sliderDot = document.querySelectorAll('.c-slider__dot');
 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
@@ -16,6 +17,7 @@ carouseSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
 
 //button
 nextBtn.addEventListener('click', () => {
+
     if (counter >= carouseSlideBox.length - 1) return;
     carouseSlide.style.transition = 'transform 0.5s ease-in-out';
     counter++;
@@ -23,7 +25,8 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-    console.log('hej');
+    // const goToSection = $(carouseSlideBox).attr('class');
+    // console.log(goToSection);
     if (counter <= 0) return;
     carouseSlide.style.transition = 'transform 0.5s ease-in-out';
     counter--;
@@ -42,4 +45,14 @@ carouseSlide.addEventListener('transitionend', () => {
         counter = carouseSlideBox.length - counter;
         carouseSlide.style.transform = 'translateX(' + (-size * counter) + 'px';
     }
-})
+
+
+    for (var i = 0; i < sliderDot.length; i++) {
+        sliderDot[i].className = sliderDot[carouseSlideBox[counter].dataset.section - 1].className.replace(" h-active", "");
+    }
+
+    sliderDot[carouseSlideBox[counter].dataset.section - 1].className += " h-active"
+
+
+
+});
