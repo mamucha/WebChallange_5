@@ -12,7 +12,12 @@
         height: 23px;
         border-radius: 50%;
         background-color: #323232;
+        transition: .5s ease-in-out;
 
+    }
+
+    &__active {
+        background-color: red;
     }
 
 
