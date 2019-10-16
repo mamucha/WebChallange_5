@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "glide": "^0.2.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
