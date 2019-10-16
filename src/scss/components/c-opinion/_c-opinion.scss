@@ -56,7 +56,48 @@
 
     }
 
+    &__btn {
+        // color: #000;
+        // background-color: $gray;
+        // height: 60px;
+        // width: 60px;
+        // border-radius: 50%;
+        font-size: 70px;
+        color: #000;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+
+    }
+
+    &__dot {
+        width: 15px;
+        height: 15px;
+
+    }
+
 }
+
+.glide__bullet {
+    background-color: rgba(143, 103, 103, 0.5);
+
+    &--active {
+        background-color: black;
+    }
+}
+
+
+
+
 
 
 
