@@ -11,23 +11,10 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    // margin-bottom: 30px;
-    padding: 0 90px 30px;
-    // width: 25%;
-
-
+    padding: 0 10% 8%;
 
     &__image {
         margin-bottom: 30px;
-    }
-
-    &__text {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // text-align: justify;
-        // width: 80%;
-
     }
 
 
@@ -50,7 +37,8 @@
     }
 
     &__author {
-        text-align: left;
+
+        text-align: center;
         font-size: $mediumFontSize;
         font-weight: 700;
 
@@ -64,14 +52,21 @@
         border: none;
         padding: 0;
 
+        //mobile
+        display: none;
+
         &--left {
-            left: 0;
+            left: 10px;
         }
 
         &--right {
-            right: 0;
+            right: 10px;
         }
 
+    }
+
+    &__dots {
+        bottom: 0;
     }
 }
 
@@ -86,6 +81,7 @@
 
         flex-direction: row;
         margin-bottom: 40px;
+        padding: 0 5% 5%;
 
         &__text {
             align-items: flex-start;
@@ -93,8 +89,28 @@
             margin: 0 5%;
         }
 
+        &__author {
+            text-align: left;
+        }
+
         &__image {
             margin-bottom: 0;
+        }
+    }
+}
+
+
+//screen > 1024px
+@mixin c-opinion\@screen_wide {
+    .c-opinion {
+        padding: 0 90px 30px;
+
+        &__btn {
+            display: block;
+        }
+
+        &__dots {
+            bottom: 2em;
         }
     }
 }
