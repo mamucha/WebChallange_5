@@ -1,7 +1,7 @@
 .c-back-top {
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 35px;
+    bottom: 35px;
     padding: 20px 14px;
     background-color: black;
     border-radius: 5px;
@@ -12,6 +12,6 @@
 
     &--show {
         opacity: 1;
-        bottom: 70px;
+        bottom: 45px;
     }
 }
