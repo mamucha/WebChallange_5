@@ -1,0 +1,17 @@
+.c-back-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px 14px;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+    transition: .5s linear;
+
+    &--show {
+        opacity: 1;
+        bottom: 70px;
+    }
+}
