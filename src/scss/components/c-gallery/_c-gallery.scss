@@ -30,8 +30,18 @@
         line-height: 24px;
 
         &--arrow {
-            margin-top: 14px;
+            margin-top: 20px;
+            cursor: pointer;
+            transform: translateY(-10px);
+            animation: arrow 1s linear infinite;
+
         }
+    }
+}
+
+@keyframes arrow {
+    100% {
+        transform: translateY(10px)
     }
 }
 
