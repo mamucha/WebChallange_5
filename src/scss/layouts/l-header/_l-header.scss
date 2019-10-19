@@ -16,6 +16,11 @@
         margin: 0 auto;
         position: relative;
         padding: 15px 20px;
+        transition: .5s all ease-in-out;
+
+        &--sticky {
+            height: 55px;
+        }
     }
 }
 
