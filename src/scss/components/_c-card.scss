@@ -8,6 +8,7 @@
     margin: 0.5rem;
     flex: auto;
     overflow: hidden;
+    display: none;
 
     &::after {
         position: absolute;
@@ -36,6 +37,10 @@
             opacity: 1;
             z-index: 1;
         }
+    }
+
+    &--show {
+        display: block;
     }
 
 

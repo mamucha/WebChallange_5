@@ -4,11 +4,15 @@
 
     &__header {
         padding-bottom: 10px;
-        color: $gray;
+
         cursor: pointer;
 
-        &--category:nth-child(1) {
+        &--category {
             color: $black;
+        }
+
+        &--inactive {
+            color: $gray;
         }
     }
 
