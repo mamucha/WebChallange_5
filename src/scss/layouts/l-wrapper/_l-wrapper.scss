@@ -22,8 +22,6 @@
         width: 95%;
     }
 
-
-
     &--gray {
         width: 90%;
         padding: 100px 0;
@@ -32,13 +30,11 @@
     &--footer {
         padding: 30px;
     }
-
 }
 
 
 //media quaries
 // screen > 1024px
-
 @mixin l-wrapper\@screen_wide {
     .l-wrapper {
 

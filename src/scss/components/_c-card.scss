@@ -23,7 +23,6 @@
     }
 
 
-
     &:hover {
         &::after {
             opacity: 0.8;
@@ -106,7 +105,5 @@
     .c-card {
 
         width: calc((100% / 3) - 1rem);
-
     }
-
 }

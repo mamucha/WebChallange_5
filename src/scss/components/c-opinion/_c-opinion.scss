@@ -2,8 +2,6 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 
-
-
 .c-opinion {
 
     display: flex;
@@ -16,8 +14,6 @@
     &__image {
         margin-bottom: 30px;
     }
-
-
 
     &__quote {
         font-style: italic;
@@ -41,7 +37,6 @@
         text-align: center;
         font-size: $mediumFontSize;
         font-weight: 700;
-
     }
 
     &__btn {
@@ -62,15 +57,12 @@
         &--right {
             right: 10px;
         }
-
     }
 
     &__dots {
         bottom: 0;
     }
 }
-
-
 
 
 

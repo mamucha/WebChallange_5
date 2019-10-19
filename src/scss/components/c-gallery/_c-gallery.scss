@@ -1,10 +1,8 @@
 .c-gallery {
-
     width: 100%;
 
     &__header {
         padding-bottom: 10px;
-
         cursor: pointer;
 
         &--category {
@@ -21,7 +19,6 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-
     }
 
     &__all {
@@ -34,7 +31,6 @@
             cursor: pointer;
             transform: translateY(-10px);
             animation: arrow 1s linear infinite;
-
         }
     }
 }
