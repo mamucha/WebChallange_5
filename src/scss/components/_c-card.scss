@@ -1,25 +1,70 @@
 .c-card {
-    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
+    width: 100%;
     max-width: 370px;
-    min-height: 290px;
-    background-color: $gray;
-    // margin: 13px 0;
+    height: 290px;
     margin: 0.5rem;
+    flex: auto;
+    overflow: hidden;
 
-    &:nth-child(1) {
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: $blue;
+        opacity: 0;
+        transition: .9s all ease-in-out;
+    }
+
+
+
+    &:hover {
+        &::after {
+            opacity: 0.8;
+        }
+
+        .c-card__img {
+            transform: scale(1.2);
+        }
+
+        .c-card__text {
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../img/portofolio/portofolio.jpg');
+        background-size: cover;
+        background-position: center center;
+        transition: .9s all ease-in-out;
     }
 
 
     &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
         color: $white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 100%;
         opacity: 0;
+        transition: .9s all ease-in-out;
     }
 
 
@@ -37,7 +82,6 @@
         padding-top: 25px;
         color: $white;
         filter: invert(1);
-
     }
 }
 
