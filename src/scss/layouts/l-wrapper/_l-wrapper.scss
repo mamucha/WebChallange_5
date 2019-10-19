@@ -3,11 +3,19 @@
     padding: 70px 15px;
     margin: 0 auto;
     width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .5s linear;
 
     //mobile
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &--showing {
+        opacity: 1;
+        transform: none;
+    }
 
     &--intro {
         text-align: center;
