@@ -9,10 +9,8 @@
     display: none;
 
     &::after {
-        @include pseudo;
+        @include position($top:0, $left:0);
         @include size(100%);
-        top: 0;
-        left: 0;
         background-color: $blue;
         opacity: 0;
         transition: .9s all ease-in-out;
@@ -40,10 +38,8 @@
 
 
     &__img {
-        @include pseudo;
+        @include position($top:0, $left:0);
         @include size(100%);
-        top: 0;
-        left: 0;
         background-image: url('../img/portofolio/portofolio.jpg');
         background-size: cover;
         background-position: center center;
@@ -52,11 +48,9 @@
 
 
     &__text {
-        @include pseudo;
+        @include position($top:0, $left:0);
         @include size(100%);
         @include flex(flex, center, center, column);
-        top: 0;
-        left: 0;
         color: $white;
         opacity: 0;
         transition: .9s all ease-in-out;

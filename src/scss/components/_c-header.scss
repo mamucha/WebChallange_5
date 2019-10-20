@@ -21,23 +21,19 @@
         position: relative;
 
         &::after {
-            @include pseudo;
+            @include position($top:0, $left:0);
             @include size(12px);
             background-color: $white;
             border-radius: 50%;
-            top: 0;
-            left: 0;
             transform: translate(-50%, -50%);
 
         }
 
         &::before {
-            @include pseudo;
+            @include position($top:0, $right:0);
             @include size(12px);
             background-color: $white;
             border-radius: 50%;
-            top: 0;
-            right: 0;
             transform: translate(50%, -50%);
         }
 

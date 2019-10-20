@@ -12,6 +12,16 @@
     position: $pos;
 }
 
+@mixin position($position: absolute, $display: block, $content: '', $left: null, $right: null, $top: null, $bottom: null) {
+    position: $position;
+    display: $display;
+    content: $content;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
 // setup size
 @mixin size($width, $height: $width) {
     width: $width;

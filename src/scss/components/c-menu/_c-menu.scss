@@ -61,12 +61,11 @@
 
         &--box {
 
-            @include pseudo;
+            @include position($left:0);
             @include size(100%, 5px);
             background: $gray;
             border-radius: 9px;
             opacity: 1;
-            left: 0;
             transform: rotate(0deg);
             transition: .25s ease-in-out;
 
