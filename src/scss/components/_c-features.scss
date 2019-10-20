@@ -1,16 +1,10 @@
 .c-features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+
+    @include flex(flex, center, space-between, column);
 
     &__box {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        width: 215px;
-        height: 225px;
+        @include flex(flex, center, space-between, column);
+        @include size(215px, 225px);
         margin-bottom: 50px;
 
         &:last-child {
@@ -25,8 +19,7 @@
     }
 
     &__icon {
-        height: 45px;
-        width: 45px;
+        @include size(45px);
         color: $white;
         filter: invert(1);
         transition: .5s all ease-in-out;

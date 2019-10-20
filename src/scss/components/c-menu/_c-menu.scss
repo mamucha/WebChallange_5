@@ -36,8 +36,7 @@
     &__hamburger {
 
         position: relative;
-        width: 55px;
-        height: 40px;
+        @include size(55px, 40px);
         transform: rotate(0deg);
         transition: .5s ease-in-out;
         cursor: pointer;
@@ -62,10 +61,8 @@
 
         &--box {
 
-            display: block;
-            position: absolute;
-            height: 5px;
-            width: 100%;
+            @include pseudo;
+            @include size(100%, 5px);
             background: $gray;
             border-radius: 9px;
             opacity: 1;
@@ -103,9 +100,7 @@
 
         &__list {
 
-            display: flex !important;
-            align-items: center;
-            justify-content: space-between;
+            @include flex(flex !important, center, space-between);
             min-width: 470px;
             position: relative;
             top: 0;

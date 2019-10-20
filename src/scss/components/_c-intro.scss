@@ -1,8 +1,6 @@
 .c-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+
+    @include flex(flex, center, space-between, column);
 
 
     &__title {

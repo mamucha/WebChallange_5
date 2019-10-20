@@ -1,4 +1,3 @@
 .c-map {
-    width: 100%;
-    height: 510px;
+    @include size(100%, 510px);
 }

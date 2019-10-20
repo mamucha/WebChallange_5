@@ -4,10 +4,7 @@
 
 .c-opinion {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(flex, center, space-around, column);
     width: 100%;
     padding: 0 10% 8%;
 

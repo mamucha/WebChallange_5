@@ -1,7 +1,6 @@
 .c-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+    @include flex(flex, stretch, space-between, column);
 
     &__adress {
         text-align: left;
@@ -20,8 +19,7 @@
 
         &--icon {
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            @include size(20px);
             margin-right: 15px;
             filter: invert(1);
         }
@@ -34,11 +32,10 @@
         justify-content: space-between;
 
         &--icon {
+            @include size(35px);
             text-align: center;
             line-height: 35px;
             display: inline-block;
-            width: 35px;
-            height: 35px;
             background-color: #fcf3ff;
             border-radius: 50%;
             transition: .5s all;
@@ -59,18 +56,14 @@
 
 
     &__form {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
+        @include flex(flex, stretch, center, column);
         text-align: left;
         max-width: 570px;
 
 
         &--inline {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+
+            @include flex(flex, stretch, space-around, column);
         }
     }
 
@@ -84,9 +77,8 @@
     }
 
     &__text {
+        @include size(100%, 160px);
         padding: 20px;
-        height: 160px;
-        width: 100%;
         margin-bottom: 20px;
         border-radius: 5px;
         border: none;
@@ -102,6 +94,7 @@
 
         flex-direction: row;
         justify-content: space-around;
+        align-items: flex-start;
         width: 100%;
 
 

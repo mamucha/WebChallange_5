@@ -4,3 +4,38 @@
 @function rem($px, $base: $baseFontSize) {
     @return ($px / $base) * 1rem;
 }
+
+// pseudoelemnt
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// setup size
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// basic flex center
+@mixin flex_center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// basic setup flexbox
+@mixin flex($display, $align, $justify, $direction:auto) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+
+    @if $direction=='column' {
+        flex-direction: column;
+    }
+
+    @else if $direction=='auto' {
+        flex-direction: row;
+    }
+}
