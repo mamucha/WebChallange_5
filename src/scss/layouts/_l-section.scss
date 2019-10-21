@@ -1,6 +1,7 @@
 .l-section {
     @include flex(flex, center, center column);
     text-align: center;
+    position: relative;
 
     &--intro {
         padding-top: 80px;
@@ -10,6 +11,7 @@
     &--services {
         background-color: $blue;
         color: $white;
+
     }
 
     &--gray {

@@ -5,15 +5,13 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  // * {
-  //   box-sizing: inherit;
-  // }
+  * {
+    box-sizing: inherit;
+  }
 
   .h-nav {
     height: 10px;
+    @include position($top:0, $left:0);
   }
 
-  .h-active {
-    background-color: #f70000;
-  }
 }
