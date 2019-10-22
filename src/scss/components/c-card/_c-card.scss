@@ -40,7 +40,7 @@
     &__img {
         @include position($top:0, $left:0);
         @include size(100%);
-        background-image: url('../img/portofolio/portofolio.jpg');
+        // background-image: url('../img/portofolio/p.jpg');
         background-size: cover;
         background-position: center center;
         transition: .9s all ease-in-out;
@@ -71,6 +71,40 @@
         padding-top: 25px;
         color: $white;
         filter: invert(1);
+        cursor: pointer;
+    }
+
+    &__open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        padding-top: 70px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.75);
+
+        &--img {
+            width: 70%;
+            max-width: 750px;
+            display: block;
+            margin: auto;
+        }
+
+
+    }
+
+    &__button {
+
+        &--close {
+            width: 50px;
+            height: 50px;
+            margin: 10px 30px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
+        }
     }
 }
 
