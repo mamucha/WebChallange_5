@@ -32,17 +32,10 @@ function open(e) {
     cardImgBox.src = e.target.parentElement.parentElement.firstElementChild.src;
 
 
-    cardCloseBox.addEventListener("click", closeModal);
 
-
-    document.addEventListener("click", function (e) {
-        if (e.target.nodeName !== "IMG") {
-            closeModal();
-        }
-    }, false);
-
-
-    function closeModal() {
+    // close window img
+    cardCloseBox.addEventListener("click", function () {
         galleryBody.removeChild(cardBox);
-    }
+    })
+
 }
