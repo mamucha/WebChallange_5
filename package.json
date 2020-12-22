@@ -30,7 +30,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-util": "^3.0.8",
     "gulp-wait": "0.0.2",
-    "node-notifier": "^5.2.1",
+    "node-notifier": "^8.0.1",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13"
   }
